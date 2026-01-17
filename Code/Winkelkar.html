@@ -7,30 +7,65 @@
     <meta name="description" content="Bestel verse groenten en fruit online bij De Groentenboers. Snelle levering, hoge kwaliteit en een ruim assortiment.">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header>
-        <div>
-            <p>klantwaardering 9,6</p>
-            <p>bel ons: <a href="tel:+3233773235">+32(0)33773235</a></p>
-            <p>snelle levering in heel Vlaanderen en Brussel</p>
+<body class="font-sans text-gray-800">
+    <header class="border-b border-gray-200">
+
+        <!-- Bovenste info balk -->
+        <div class="bg-gray-100 text-sm">
+            <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-1 md:flex-row md:justify-between">
+                <p>Klantwaardering 9,6</p>
+                <p>
+                    Bel ons:
+                    <a href="tel:+3233773235" class="text-green-800 hover:underline hover:text-green-900">
+                        +32(0)33773235
+                    </a>
+                </p>
+                <p>Snelle levering in heel Vlaanderen en Brussel</p>
+            </div>
         </div>
-        <div>
-            <a href="index.html">
-                <img src="logo.png" alt="De Groentenboers logo">
+
+        <!-- Logo + winkelmand -->
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="Home.html">
+                <img src="IMG/Logo.png" alt="De Groentenboers logo" class="h-12">
+            </a>
+
+            <a href="Winkelkar.html" class="text-sm font-medium hover:text-green-900">
+                Winkelmandje (0)
             </a>
         </div>
-        <div>
-            <a href="cart.html">winkelmandje (0)</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Over ons</a></li>
-                <li><a href="products.html">Producten</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="jobs.html">Vacatures</a></li>
+
+        <!-- Navigatie -->
+        <nav class="bg-green-800">
+            <ul class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row">
+                <li>
+                    <a href="Home.html" class="block px-4 py-3 text-white hover:bg-green-900">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="Wie zijn we.html" class="block px-4 py-3 text-white hover:bg-green-900">
+                        Over ons
+                    </a>
+                </li>
+                <li>
+                    <a href="Producten.html" class="block px-4 py-3 text-white hover:bg-green-900">
+                        Producten
+                    </a>
+                </li>
+                <li>
+                    <a href="Contact.html" class="block px-4 py-3 text-white hover:bg-green-900">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="Join us.html" class="block px-4 py-3 text-white hover:bg-green-900">
+                        Vacatures
+                    </a>
+                </li>
             </ul>
         </nav>
+
     </header>
     <main>
     </main>
@@ -38,19 +73,19 @@
         <section>
             <h2>Onze diensten</h2>
             <ul>
-                <li><a href="products.html">Groenten</a></li>
-                <li><a href="products.html">Fruit</a></li>
-                <li><a href="products.html">Fruitmanden</a></li>
-                <li><a href="about.html">Over ons</a></li>
+                <li><a href="Producten.html">Groenten</a></li>
+                <li><a href="Producten.html">Fruit</a></li>
+                <li><a href="Producten.html">Fruitmanden</a></li>
+                <li><a href="Wie zijn we.html">Over ons</a></li>
             </ul>
         </section>
         <section>
             <h2>Service &amp; contact</h2>
             <ul>
-                <li><a href="contact.html">Klantenservice</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="jobs.html">Werken bij</a></li>
-                <li><a href="about.html">Veelgestelde vragen</a></li>
+                <li><a href="Contact.html">Klantenservice</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Join us.html">Werken bij</a></li>
+                <li><a href="Wie zijn we.html">Veelgestelde vragen</a></li>
             </ul>
         </section>
         <div>
@@ -70,8 +105,8 @@
             <h2>Schrijf je in voor onze nieuwsbrief</h2>
             <form>
                 <div>
-                    <label for="email">E-mailadres</label>
-                    <input type="email" id="email" placeholder="jouw@email.be" required>
+                    <label for="email2">E-mailadres</label>
+                    <input type="email" id="email2" placeholder="jouw@email.be" required>
                 </div>
                 <button type="submit">Aanmelden</button>
             </form>
