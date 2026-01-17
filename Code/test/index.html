@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=grocery">
 </head>
 <body>
+    <header class="border-b border-gray-200">
+
+        <!-- Bovenste info balk -->
+        <div class="bg-gray-300 text-sm">
+            <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-1 md:flex-row md:justify-evenly">
+                <p><a class="hover:text-yellow-300" href="https://www.trustpilot.com/">Klantwaardering 9,6</a></p>
+                <p>
+                    Bel ons:
+                    <a href="tel:+3233773235" class="text-green-800 hover:underline hover:text-green-900">
+                        +32(0)33773235
+                    </a>
+                </p>
+                <p>Snelle levering in heel Vlaanderen en Brussel</p>
+                <div>
+                <p><a class="hover:text-green-900" href="#">NL</a> <a class="hover:text-green-900" href="#">ENG</a> <a class="hover:text-green-900" href="#">FR</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigatie -->
 <nav class="relative bg-green-600 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
@@ -43,5 +63,93 @@
     </div>
   </div>
 </nav>
+</header>
+    <footer class="bg-gray-50 border-t border-gray-200" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                    <a href="Home.html" class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl text-black">grocery</span>
+                        <span class="font-bold text-xl text-gray-900">De Groentenboers</span>
+                    </a>
+                    <p class="text-sm leading-6 text-gray-600">
+                        Verse groenten en fruit, rechtstreeks bij u thuis geleverd in heel Vlaanderen.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com" aria-label="Facebook"
+                            class="text-gray-400 hover:text-gray-500"><span
+                                class="fa-brands fa-square-facebook hover:text-gray-500"></span></a>
+                        <a href="https://www.twitter.com" aria-label="Twitter" class="text-gray-400"><span
+                                class="fa-brands fa-square-x-twitter hover:text-gray-500"></span></a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="text-gray-400"><span
+                                class="fa-brands fa-linkedin hover:text-gray-500"></span></a>
+                        <a href="https://www.instagram.com" aria-label="Instagram" class="text-gray-400"><span
+                                class="fa-brands fa-square-instagram hover:text-gray-500"></span></a>
+                        <a href="https://www.youtube.com" aria-label="Youtube" class="text-gray-400"><span
+                                class="fa-brands fa-square-youtube hover:text-gray-500"></span></a>
+                    </div>
+                </div>
+                <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Onze diensten</h3>
+                            <ul class="mt-6 space-y-4">
+                                <li><a href="Producten.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Groenten</a></li>
+                                <li><a href="Producten.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Fruit</a></li>
+                                <li><a href="Producten.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Fruitmanden</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Service en contact</h3>
+                            <ul class="mt-6 space-y-4">
+                                <li><a href="Wie zijn we.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Over ons</a></li>
+                                <li><a href="Contact.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Klantenservice</a>
+                                </li>
+                                <li><a href="Contact.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Contact</a></li>
+                                <li><a href="Join us.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Werken bij</a></li>
+                                <li><a href="Wie zijn we.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Veelgestelde vragen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
+                <div>
+                    <h3 class="text-sm font-semibold leading-6 text-gray-900">Schrijf je in voor onze nieuwsbrief</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-600">Blijf op de hoogte van onze wekelijkse acties en vers fruit.</p>
+                </div>
+                <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
+                    <label for="email-address" class="sr-only">E-mailadres</label>
+                    <input type="email" name="email-address" id="email-address" autocomplete="email" required
+                        class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-800 sm:w-64 sm:text-sm sm:leading-6 lg:w-full"
+                        placeholder="jouw@email.be">
+                    <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
+                        <button type="submit"
+                            class="flex w-full items-center justify-center rounded-md bg-green-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800">Aanmelden</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-xs leading-5 text-gray-500 hover:text-gray-900">Algemene voorwaarden</a>
+                    <a href="#" class="text-xs leading-5 text-gray-500 hover:text-gray-900">Privacy</a>
+                </div>
+                <p class="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
+                    &copy; 2025 De Groentenboers. Alle rechten voorbehouden.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
