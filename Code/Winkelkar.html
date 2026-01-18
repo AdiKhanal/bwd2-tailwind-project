@@ -83,9 +83,107 @@
             </div>
         </nav>
     </header>
-    <h1>Winkelkar</h1>
-    <img src="IMG/winkelwagen.jpg" alt="Winkelkar">
     <main>
+        <h1>Winkelkar</h1>
+        <img src="IMG/winkelwagen.jpg" alt="Winkelkar">
+        <h2>Totalen winkelwagen.</h2>
+        <p>Gratis levering vanaf €25</p>
+        <a href="index.html" class="verder-winkelen">Verder winkelen</a>
+        <section class="winkelmandje-items">
+            <article class="winkelmandje-item">
+                <figure>
+                    <img src="IMG/groenten/broccoli.jpg" alt="Verse broccoli">
+                </figure>
+                <div class="item-details">
+                    <h3>BELGIE Broccoli</h3>
+                    <p class="beschrijving">vol vitamines</p>
+                    <p class="prijs">€1,29 per stuk</p>
+                </div>
+                <div class="item-aanpassing">
+                    <label for="broccoli-hoeveelheid">Aantal:</label>
+                    <input type="number" id="broccoli-hoeveelheid" value="2" min="1" max="99">
+                    <button type="button" class="verwijder-knop">Verwijderen</button>
+                </div>
+                <div class="item-totaal">
+                    <p class="subtotaal">€2,58</p>
+                </div>
+            </article>
+
+            <article class="winkelmandje-item">
+                <figure>
+                    <img src="IMG/groenten/courgette.jpg" alt="Verse courgette">
+                </figure>
+                <div class="item-details">
+                    <h3>BELGIE Courgette</h3>
+                    <p class="beschrijving">veelzijdig groente</p>
+                    <p class="prijs">€1,12 per stuk</p>
+                </div>
+                <div class="item-aanpassing">
+                    <label for="broccoli-hoeveelheid">Aantal:</label>
+                    <input type="number" id="broccoli-hoeveelheid" value="2" min="1" max="99">
+                    <button type="button" class="verwijder-knop">Verwijderen</button>
+                </div>
+                <div class="item-totaal">
+                    <p class="subtotaal">€2,24</p>
+                </div>
+            </article>
+
+            <article class="winkelmandje-item">
+                <figure>
+                    <img src="IMG/groenten/tomaten.jpg" alt="Verse tomaten">
+                </figure>
+                <div class="item-details">
+                    <h3>NEDERLAND Tomaten</h3>
+                    <p class="beschrijving">zoet en sappig</p>
+                    <p class="prijs">€1,99 per kilo</p>
+                </div>
+                <div class="item-aanpassing">
+                    <label for="tomaten-hoeveelheid">Gewicht (kg):</label>
+                    <input type="number" id="tomaten-hoeveelheid" value="1" min="0.5" step="0.5" max="99">
+                    <button type="button" class="verwijder-knop">Verwijderen</button>
+                </div>
+                <div class="item-totaal">
+                    <p class="subtotaal">€1,99</p>
+                </div>
+            </article>
+
+            <article class="winkelmandje-item">
+                <figure>
+                    <img src="IMG/fruit/fruitmand groot.jpg" alt="Grote fruitmand">
+                </figure>
+                <div class="item-details">
+                    <h3>ASSORTIMENT Fruitmand Groot</h3>
+                    <p class="beschrijving">luxe selectie</p>
+                    <p class="prijs">€12,95 per stuk</p>
+                </div>
+                <div class="item-aanpassing">
+                    <label for="fruitmand-hoeveelheid">Aantal:</label>
+                    <input type="number" id="fruitmand-hoeveelheid" value="1" min="1" max="99">
+                    <button type="button" class="verwijder-knop">Verwijderen</button>
+                </div>
+                <div class="item-totaal">
+                    <p class="subtotaal">€12,95</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="winkelmandje-samenvatting">
+            <h2>Overzicht</h2>
+            <div class="samenvatting-regel">
+                <span>Subtotaal:</span>
+                <span>€19,76</span>
+            </div>
+            <div class="samenvatting-regel">
+                <span>Verzendkosten:</span>
+                <span>€3,95</span>
+            </div>
+            <div class="samenvatting-regel totaal">
+                <span>Totaal:</span>
+                <span>€23,71</span>
+            </div>
+            <button type="button" class="afrekenen-knop">Afrekenen</button>
+            <a href="index.html" class="verder-winkelen">Verder winkelen</a>
+        </section>
     </main>
     <footer class="bg-gray-50 border-t border-gray-200" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -116,7 +214,8 @@
                 <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
-                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Onze diensten</h3>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Onze
+                                diensten</h3>
                             <ul class="mt-6 space-y-4">
                                 <li><a href="Producten.html"
                                         class="text-sm leading-6 text-gray-600 hover:text-green-800">Groenten</a></li>
@@ -128,7 +227,8 @@
                             </ul>
                         </div>
                         <div class="mt-10 md:mt-0">
-                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Service en contact</h3>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Service
+                                en contact</h3>
                             <ul class="mt-6 space-y-4">
                                 <li><a href="Wie zijn we.html"
                                         class="text-sm leading-6 text-gray-600 hover:text-green-800">Over ons</a></li>
@@ -140,7 +240,8 @@
                                 <li><a href="Join us.html"
                                         class="text-sm leading-6 text-gray-600 hover:text-green-800">Werken bij</a></li>
                                 <li><a href="Wie zijn we.html"
-                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Veelgestelde vragen</a></li>
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Veelgestelde
+                                        vragen</a></li>
                             </ul>
                         </div>
                     </div>
@@ -150,7 +251,8 @@
                 class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
                 <div>
                     <h3 class="text-sm font-semibold leading-6 text-gray-900">Schrijf je in voor onze nieuwsbrief</h3>
-                    <p class="mt-2 text-sm leading-6 text-gray-600">Blijf op de hoogte van onze wekelijkse acties en vers fruit.</p>
+                    <p class="mt-2 text-sm leading-6 text-gray-600">Blijf op de hoogte van onze wekelijkse acties en
+                        vers fruit.</p>
                 </div>
                 <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
                     <label for="email-address" class="sr-only">E-mailadres</label>
@@ -175,4 +277,5 @@
         </div>
     </footer>
 </body>
+
 </html>
