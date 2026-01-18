@@ -8,15 +8,16 @@
     <meta name="description"
         content="Bestel verse groenten en fruit online bij De Groentenboers. Snelle levering, hoge kwaliteit en een ruim assortiment.">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=grocery">
 </head>
 
 <body class="font-sans text-gray-800">
     <header class="border-b border-gray-200">
 
         <!-- Bovenste info balk -->
-        <div class="bg-gray-100 text-sm">
-            <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-1 md:flex-row md:justify-between">
-                <p>Klantwaardering 9,6</p>
+        <div class="bg-gray-300 text-sm">
+            <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-1 md:flex-row md:justify-evenly">
+                <p><a class="hover:text-yellow-300" href="https://www.trustpilot.com/">Klantwaardering 9,6</a></p>
                 <p>
                     Bel ons:
                     <a href="tel:+3233773235" class="text-green-800 hover:underline hover:text-green-900">
@@ -24,51 +25,62 @@
                     </a>
                 </p>
                 <p>Snelle levering in heel Vlaanderen en Brussel</p>
+                <div>
+                    <p><a class="hover:text-green-900" href="Home.html">NL</a> <a class="hover:text-green-900"
+                            href="#">ENG</a> <a class="hover:text-green-900" href="#">FR</a></p>
+                </div>
             </div>
         </div>
 
-        <!-- Logo + winkelmand -->
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="Home.html">
-                <img src="IMG/Logo.png" alt="De Groentenboers logo" class="h-12">
-            </a>
-
-            <a href="Winkelkar.html" class="text-sm font-medium hover:text-green-900">
-                Winkelmandje (0)
-            </a>
-        </div>
-
         <!-- Navigatie -->
-        <nav class="bg-green-800">
-            <ul class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row">
-                <li>
-                    <a href="Home.html" class="block px-4 py-3 text-white hover:bg-green-900">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="Wie zijn we.html" class="block px-4 py-3 text-white hover:bg-green-900">
-                        Over ons
-                    </a>
-                </li>
-                <li>
-                    <a href="Producten.html" class="block px-4 py-3 text-white hover:bg-green-900">
-                        Producten
-                    </a>
-                </li>
-                <li>
-                    <a href="Contact.html" class="block px-4 py-3 text-white hover:bg-green-900">
-                        Contact
-                    </a>
-                </li>
-                <li>
-                    <a href="Join us.html" class="block px-4 py-3 text-white hover:bg-green-900">
-                        Vacatures
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <nav
+            class="relative bg-green-600 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
+                        <!-- Mobile menu button-->
+                        <button type="button" command="--toggle" commandfor="mobile-menu"
+                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+                        </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex shrink-0 items-center">
+                            <a href="#"><span
+                                    class="material-symbols-outlined text-4xl text-gray-300 hover:text-white">grocery</span></a>
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <a href="Home.html" aria-current="page"
+                                    class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Home</a>
+                                <a href="Producten.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Producten</a>
+                                <a href="Wie zijn we.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Wie
+                                    zijn we</a>
+                                <a href="Join us.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Join
+                                    us</a>
+                                <a href="Contact.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+                                <a href="Wie zijn we.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Winkelkar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <button type="button"
+                            class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                            <span class="absolute -inset-1.5"></span>
+                            <span class="sr-only">View notifications</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <h1>Onze heerlijk verse producten</h1>
@@ -654,27 +666,44 @@
         <div>
             <img src="logo.png" alt="De Groentenboers logo">
         </div>
-        <ul>
-            <li><a href="#">Algemene voorwaarden</a></li>
-            <li><a href="#">Privacy</a></li>
-        </ul>
-        <ul>
-            <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
-            <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
-            <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
-            <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
-        </ul>
+            <ul>
+                <li><a href="#">Algemene voorwaarden</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
         <section>
             <h2>Schrijf je in voor onze nieuwsbrief</h2>
             <form>
                 <div>
-                    <label for="email2">E-mailadres</label>
-                    <input type="email" id="email2" placeholder="jouw@email.be" required>
+                    <h3 class="text-sm font-semibold leading-6 text-gray-900">Schrijf je in voor onze nieuwsbrief</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-600">Blijf op de hoogte van onze wekelijkse acties en vers fruit.</p>
                 </div>
-                <button type="submit">Aanmelden</button>
-            </form>
-        </section>
-        <p>&copy; 2025 De Groentenboers. Alle rechten voorbehouden.</p>
+                <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
+                    <label for="email-address" class="sr-only">E-mailadres</label>
+                    <input type="email" name="email-address" id="email-address" autocomplete="email" required
+                        class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-800 sm:w-64 sm:text-sm sm:leading-6 lg:w-full"
+                        placeholder="jouw@email.be">
+                    <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
+                        <button type="submit"
+                            class="flex w-full items-center justify-center rounded-md bg-green-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800">Aanmelden</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-xs leading-5 text-gray-500 hover:text-gray-900">Algemene voorwaarden</a>
+                    <a href="#" class="text-xs leading-5 text-gray-500 hover:text-gray-900">Privacy</a>
+                </div>
+                <p class="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
+                    &copy; 2025 De Groentenboers. Alle rechten voorbehouden.
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 
