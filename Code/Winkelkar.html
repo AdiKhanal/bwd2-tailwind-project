@@ -55,7 +55,7 @@
                         <div class="hidden sm:ml-6 sm:block">
                             <div class="flex space-x-4">
                                 <a href="Home.html" aria-current="page"
-                                    class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Home</a>
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Home</a>
                                 <a href="Producten.html"
                                     class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Producten</a>
                                 <a href="Wie zijn we.html"
@@ -67,7 +67,7 @@
                                 <a href="Contact.html"
                                     class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
                                 <a href="Winkelkar.html"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Winkelkar</a>
+                                    class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Winkelkar</a>
                             </div>
                         </div>
                     </div>
@@ -83,109 +83,104 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1>Winkelkar</h1>
-        <img src="IMG/winkelwagen.jpg" alt="Winkelkar">
+    <main class="mx-auto max-w-7xl px-4 py-12">
+        <h1 class="text-center text-4xl font-bold text-gray-900 sm:text-5xl">Winkelkar</h1>
 
         <!--Winkelwagen inhoud-->
-        <h2>Totalen winkelwagen.</h2>
-        <p>Gratis levering vanaf €25</p>
-        <a href="index.html" class="verder-winkelen">Verder winkelen</a>
+        <h2 class="mb-5 text-2xl font-bold tracking-tight text-gray-800">Totalen winkelwagen:</h2>
+        <p class="mb-5 text-xl font-bold tracking-tight text-red-800 animate-pulse">Gratis levering vanaf €25!!</p>
         <section class="winkelmandje-items">
-            <article class="winkelmandje-item">
-                <figure>
-                    <img src="IMG/groenten/broccoli.jpg" alt="Verse broccoli">
-                </figure>
-                <div class="item-details">
-                    <h3>BELGIE Broccoli</h3>
-                    <p class="beschrijving">vol vitamines</p>
-                    <p class="prijs">€1,29 per stuk</p>
-                </div>
-                <div class="item-aanpassing">
-                    <label for="broccoli-hoeveelheid">Aantal:</label>
-                    <input type="number" id="broccoli-hoeveelheid" value="2" min="1" max="99">
-                    <button type="button" class="verwijder-knop">Verwijderen</button>
-                </div>
-                <div class="item-totaal">
-                    <p class="subtotaal">€2,58</p>
-                </div>
-            </article>
-
-            <article class="winkelmandje-item">
-                <figure>
-                    <img src="IMG/groenten/courgette.jpg" alt="Verse courgette">
-                </figure>
-                <div class="item-details">
-                    <h3>BELGIE Courgette</h3>
-                    <p class="beschrijving">veelzijdig groente</p>
-                    <p class="prijs">€1,12 per stuk</p>
-                </div>
-                <div class="item-aanpassing">
-                    <label for="broccoli-hoeveel">Aantal:</label>
-                    <input type="number" id="broccoli-hoeveel" value="2" min="1" max="99">
-                    <button type="button" class="verwijder-knop">Verwijderen</button>
-                </div>
-                <div class="item-totaal">
-                    <p class="subtotaal">€2,24</p>
-                </div>
-            </article>
-
-            <article class="winkelmandje-item">
-                <figure>
-                    <img src="IMG/groenten/tomaten.jpg" alt="Verse tomaten">
-                </figure>
-                <div class="item-details">
-                    <h3>NEDERLAND Tomaten</h3>
-                    <p class="beschrijving">zoet en sappig</p>
-                    <p class="prijs">€1,99 per kilo</p>
-                </div>
-                <div class="item-aanpassing">
-                    <label for="tomaten-hoeveelheid">Gewicht (kg):</label>
-                    <input type="number" id="tomaten-hoeveelheid" value="1" min="0.5" step="0.5" max="99">
-                    <button type="button" class="verwijder-knop">Verwijderen</button>
-                </div>
-                <div class="item-totaal">
-                    <p class="subtotaal">€1,99</p>
-                </div>
-            </article>
-
-            <article class="winkelmandje-item">
-                <figure>
-                    <img src="IMG/fruit/fruitmand groot.jpg" alt="Grote fruitmand">
-                </figure>
-                <div class="item-details">
-                    <h3>ASSORTIMENT Fruitmand Groot</h3>
-                    <p class="beschrijving">luxe selectie</p>
-                    <p class="prijs">€12,95 per stuk</p>
-                </div>
-                <div class="item-aanpassing">
-                    <label for="fruitmand-hoeveelheid">Aantal:</label>
-                    <input type="number" id="fruitmand-hoeveelheid" value="1" min="1" max="99">
-                    <button type="button" class="verwijder-knop">Verwijderen</button>
-                </div>
-                <div class="item-totaal">
-                    <p class="subtotaal">€12,95</p>
-                </div>
-            </article>
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="IMG/fruit/aardbei.jpg" alt="Verse aardbeien"
+                            class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Aardbeien</p>
+                        <p class="text-base font-semibold text-gray-900">€ 6,32 <span
+                                class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="aardbei-amount" class="sr-only">Hoeveelheid</label>
+                                <input type="number" id="aardbei-amount" value="0.5" min="0.5" step="0.5"
+                                    class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="IMG/fruit/citroen.jpg" alt="Verse citroenen"
+                            class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">SPANJE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Citroenen</p>
+                        <p class="text-base font-semibold text-gray-900">€ 3,32 <span
+                                class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="citroen-amount" class="sr-only">Hoeveelheid</label>
+                                <input type="number" id="citroen-amount" value="0.5" min="0.5" step="0.5"
+                                    class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="IMG/fruit/kersen.jpg" alt="Verse kersen"
+                            class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">TURKIJE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Kersen</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,32 <span
+                                class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="kersen-amount" class="sr-only">Hoeveelheid</label>
+                                <input type="number" id="kersen-amount" value="0.5" min="0.5" step="0.5"
+                                    class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
-
-        <section class="winkelmandje-samenvatting">
-            <h2>Overzicht</h2>
+        <section class="winkelmandje-samenvatting flex flex-col items-end">
             <div class="samenvatting-regel">
-                <span>Subtotaal:</span>
-                <span>€19,76</span>
+                <p>Subtotaal: €19,76</p>
             </div>
             <div class="samenvatting-regel">
-                <span>Verzendkosten:</span>
-                <span>€3,95</span>
+                <p>Verzendkosten: €3,95</p>
             </div>
-            <!--Winkelwagen totaal-->
             <div class="samenvatting-regel totaal">
-                <span>Totaal:</span>
-                <span>€23,71</span>
+                <p>Totaal: €23,71</p>
             </div>
-            <button type="button" class="afrekenen-knop">Afrekenen</button>
-            <a href="index.html" class="verder-winkelen">Verder winkelen</a>
+        </section>
+        <section class="mt-20 mb-10">
+            <div class="flex items-center justify-between gap-4">
+                <a href="Producten.html"
+                    class="pl-20 pr-20 pt-5 pb-5 inline-flex items-center justify-center rounded-md bg-red-800 px-6 py-2 text-sm font-medium text-white hover:bg-green-700 transition">
+                    Verder winkelen
+                </a>
+                <a href="#"
+                    class="pl-20 pr-20 pt-5 pb-5 inline-flex items-center justify-center rounded-md bg-red-800 px-6 py-2 text-sm font-medium text-white hover:bg-green-700 transition">
+                    Afrekenen
+                </a>
+            </div>
         </section>
     </main>
 

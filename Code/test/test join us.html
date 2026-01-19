@@ -59,10 +59,10 @@
                                 <a href="Producten.html"
                                     class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Producten</a>
                                 <a href="Wie zijn we.html"
-                                    class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Wie
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Wie
                                     zijn we</a>
                                 <a href="Join us.html"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Join
+                                    class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Join
                                     us</a>
                                 <a href="Contact.html"
                                     class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
@@ -83,43 +83,108 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1>Over ons</h1>
-        <p>Wat krijg je als je de passie voor eerlijk eten combineert met een jarenlange vriendschap? Het antwoord is De
-            Groentenboers.</p>
-        <figure>
-            <img src="IMG/Ari en Pieter.jpg" alt="About">
-            <figcaption>Pieter en Ari</figcaption>
-        </figure>
-        <h2>Wie zijn De Groentenboers?</h2>
+    <main class="mx-auto max-w-7xl px-4 py-12">
+        <h1 class="text-center text-4xl font-bold text-gray-900 sm:text-5xl">Winkelkar</h1>
 
-        <section>
-            <p>Pieter is het gezicht van onze selectie. Met zijn open en vriendelijke uitstraling trekt hij er dagelijks
-                op uit om de allerbeste groenten en fruit te vinden. Voor Pieter is alleen de hoogste kwaliteit goed
-                genoeg; hij onderhoudt de nauwe banden met onze lokale boeren en zorgt ervoor dat alleen de meest verse
-                oogst in onze kratten belandt.
-
-                Ari is het organisatorische brein achter de webshop. Dankzij zijn scherpe oog voor detail en passie voor
-                logistiek verloopt het online bestelproces vlekkeloos. Ari zorgt ervoor dat de zorgvuldig geselecteerde
-                producten van Pieter op het juiste moment en in perfecte staat bij jou aan de voordeur worden bezorgd.
-            </p>
-            <h2>Onze Missie</h2>
-            <figure>
-                <img src="IMG/Missie.jpg" alt="About">
-            </figure>
-            <p>Wat begon als een gedeelde droom op de lokale markt, is uitgegroeid tot de online bestemming voor
-                iedereen die houdt van vers, gezond en lokaal. Bij De Groentenboers geloven we in de korte keten: minder
-                kilometers, meer smaak. We staan elke dag vroeg op om de versheid te garanderen die je in de supermarkt
-                vaak mist.
-
-                Bij ons koop je niet zomaar groenten; je steunt een visie op duurzaamheid en vakmanschap. Wij zijn
-                Pieter en Ari, en we kijken ernaar uit om de lekkerste producten van het land bij jou in de keuken te
-                brengen.
-
-                Welkom bij De Groentenboers!</p>
+        <!--Winkelwagen inhoud-->
+        <h2 class="mb-5 text-2xl font-bold tracking-tight text-gray-800">Totalen winkelwagen:</h2>
+        <p class="mb-5 text-xl font-bold tracking-tight text-red-800 animate-pulse">Gratis levering vanaf €25!!</p>
+        <section class="winkelmandje-items">
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="IMG/fruit/aardbei.jpg" alt="Verse aardbeien"
+                            class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Aardbeien</p>
+                        <p class="text-base font-semibold text-gray-900">€ 6,32 <span
+                                class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="aardbei-amount" class="sr-only">Hoeveelheid</label>
+                                <input type="number" id="aardbei-amount" value="0.5" min="0.5" step="0.5"
+                                    class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="IMG/fruit/citroen.jpg" alt="Verse citroenen"
+                            class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">SPANJE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Citroenen</p>
+                        <p class="text-base font-semibold text-gray-900">€ 3,32 <span
+                                class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="citroen-amount" class="sr-only">Hoeveelheid</label>
+                                <input type="number" id="citroen-amount" value="0.5" min="0.5" step="0.5"
+                                    class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="IMG/fruit/kersen.jpg" alt="Verse kersen"
+                            class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">TURKIJE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Kersen</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,32 <span
+                                class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="kersen-amount" class="sr-only">Hoeveelheid</label>
+                                <input type="number" id="kersen-amount" value="0.5" min="0.5" step="0.5"
+                                    class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="winkelmandje-samenvatting flex flex-col items-end">
+            <div class="samenvatting-regel">
+                <p>Subtotaal: €19,76</p>
+            </div>
+            <div class="samenvatting-regel">
+                <p>Verzendkosten: €3,95</p>
+            </div>
+            <div class="samenvatting-regel totaal">
+                <p>Totaal: €23,71</p>
+            </div>
+        </section>
+        <section class="mt-20 mb-10">
+            <div class="flex items-center justify-between gap-4">
+                <a href="Producten.html"
+                    class="pl-20 pr-20 pt-5 pb-5 inline-flex items-center justify-center rounded-md bg-red-800 px-6 py-2 text-sm font-medium text-white hover:bg-green-700 transition">
+                    Verder winkelen
+                </a>
+                <a href="#"
+                    class="pl-20 pr-20 pt-5 pb-5 inline-flex items-center justify-center rounded-md bg-red-800 px-6 py-2 text-sm font-medium text-white hover:bg-green-700 transition">
+                    Afrekenen
+                </a>
+            </div>
         </section>
     </main>
-   <footer class="bg-gray-50 border-t border-gray-200" aria-labelledby="footer-heading">
+
+    <footer class="bg-gray-50 border-t border-gray-200" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
         <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">
