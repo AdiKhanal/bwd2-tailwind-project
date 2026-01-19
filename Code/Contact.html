@@ -18,17 +18,17 @@
         <!-- Bovenste info balk -->
         <div class="bg-gray-300 text-sm">
             <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-1 md:flex-row md:justify-evenly">
-                <p><a class="hover:text-yellow-300" href="https://www.trustpilot.com/">Klantwaardering 9,6</a></p>
+                <p><a class="hover:text-yellow-300 hover:font-bold" href="https://www.trustpilot.com/">Klantwaardering 9,6</a></p>
                 <p>
                     Bel ons:
-                    <a href="tel:+3233773235" class="text-green-800 hover:underline hover:text-green-900">
+                    <a href="tel:+3233773235" class="text-green-800 hover:underline hover:text-green-900 hover:font-bold">
                         +32(0)33773235
                     </a>
                 </p>
                 <p>Snelle levering in heel Vlaanderen en Brussel</p>
                 <div>
-                    <p><a class="hover:text-green-900" href="Home.html">NL</a> <a class="hover:text-green-900"
-                            href="#">ENG</a> <a class="hover:text-green-900" href="#">FR</a></p>
+                    <p><a class="hover:text-green-900 hover:font-bold" href="Home.html">NL</a> <a class="hover:text-green-900 hover:font-bold"
+                            href="#">ENG</a> <a class="hover:text-green-900 hover:font-bold" href="#">FR</a></p>
                 </div>
             </div>
         </div>
@@ -83,84 +83,102 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1>Contacteer De Groentenboers</h1>
-        <p>Vragen of opmerkingen? Contacteer ons en we helpen je zo snel mogelijk!</p>
-        <figure>
+    <main class="mx-auto max-w-7xl px-4 py-12">
+        <h1 class="mt-5 text-center text-4xl font-bold text-gray-900 sm:text-5xl">Contacteer De Groentenboers</h1>
+        <p class=" mt-5 text-center text-xl tracking-tight text-gray-800">Vragen of opmerkingen? Contacteer ons en we
+            helpen je zo snel mogelijk!</p>
+        <figure class="h-full w-full mt-5 flex justify-center">
             <img src="IMG/contact.jpg" alt="Contact">
         </figure>
 
         <!--Contactformulier-->
-        <form action="mailto:info@groentenboers.be" method="post" enctype="text/plain">
-            <div>
-                <label for="naam">Naam: *</label><br>
-                <input type="text" id="naam" required>
-            </div>
-            <div>
-                <label for="voornaam">Voornaam: *</label><br>
-                <input type="text" id="voornaam" required>
-            </div>
-            <div>
-                <label for="email">Email: *</label><br>
-                <input type="email" id="email" required>
-            </div>
-            <div>
-                <label for="telefoon">Telefoon:</label><br>
-                <input type="tel" id="telefoon">
-            </div>
-            <div>
-                <label for="onderwerp">Onderwerp:</label><br>
-                <select id="onderwerp">
-                    <option value="offerte">offerte</option>
-                    <option value="bestelling">bestelling</option>
-                    <option value="klacht">klacht</option>
-                    <option value="andere">andere</option>
-                </select>
-            </div>
-            <div>
-                <label for="bericht">Bericht:</label><br>
-                <textarea id="bericht" cols="40" rows="5"></textarea>
-            </div>
-            <div>
-                <button type="submit">Verzenden</button>
-                <button type="reset">Wissen</button>
-            </div>
-            <div>
-                <label><input type="checkbox"> Inschrijven voor de nieuwsbrief</label>
-            </div>
-        </form>
-        <section id="faq">
-            <h2>Veelgestelde vragen</h2>
-
-            <div class="faq-item">
-                <h3>Wat zijn de openingsuren?</h3>
-                <p>Wij zijn geopend van maandag tot vrijdag van 9:00 tot 17:00 uur. In het weekend zijn we gesloten.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Hoe kan ik contact met jullie opnemen?</h3>
-                <p>U kunt ons bereiken via telefoon op +32(0)33773235, via email op info@groentenboers.be, of via het
-                    contactformulier op onze website.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Wat is de levertijd voor bestellingen?</h3>
-                <p>Standaard bestellingen worden binnen 3 tot 5 werkdagen geleverd. Voor spoedbestellingen bieden we een
-                    express optie aan met levering binnen 24 uur.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Kan ik mijn bestelling annuleren?</h3>
-                <p>Ja, u kunt uw bestelling kosteloos annuleren tot 24 uur na plaatsing. Neem hiervoor contact op met
-                    onze klantenservice.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Welke betaalmethoden accepteren jullie?</h3>
-                <p>We accepteren creditcards (Visa, Mastercard), Bancontact, PayPal en bankoverschrijving. Alle
-                    betalingen worden veilig verwerkt.</p>
-            </div>
-
+        <section class="mt-10">
+            <form action="mailto:info@groentenboers.be" method="post" enctype="text/plain">
+                <div class=" grid grid-cols-1 mt-5">
+                    <label for="naam" class="font-bold text-xl">Naam: *</label><br>
+                    <div class="flex items-center rounded-md outline bg-red-100">
+                        <input type="text" id="naam" required>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 mt-5">
+                    <label for="voornaam" class="font-bold text-xl">Voornaam: *</label><br>
+                    <div class="flex items-center rounded-md outline bg-red-100">
+                        <input type="text" id="voornaam" required>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 mt-5">
+                    <label for="email" class="font-bold text-xl">Email: *</label><br>
+                    <div class="flex items-center rounded-md outline bg-red-100">
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 mt-5">
+                    <label for="telefoon" class="font-bold text-xl">Telefoon:</label><br>
+                    <div class="flex items-center rounded-md outline bg-red-100">
+                        <input type="tel" id="telefoon">
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 mt-5">
+                    <label for="onderwerp" class="font-bold text-xl">Onderwerp:</label><br>
+                    <div class="flex items-center rounded-md outline bg-red-100">
+                        <select id="onderwerp">
+                            <option value="offerte">Offerte</option>
+                            <option value="bestelling">Bestelling</option>
+                            <option value="klacht">Klacht</option>
+                            <option value="andere">Andere</option>
+                        </select>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 mt-5">
+                    <label for="bericht" class="font-bold text-xl">Bericht:</label><br>
+                    <div class="flex items-center rounded-md outline bg-red-100">
+                        <textarea id="bericht" cols="40" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 mt-5">
+                    <label><input type="checkbox"> Inschrijven voor onze nieuwsbrief</label>
+                </div>
+                <div class=" grid grid-cols-1">
+                    <button type="submit"
+                        class="mt-5 mb-5 flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-500 transition">Verzenden</button>
+                    <button type="reset"
+                        class="mt-5 mb-5 flex w-full items-center justify-center rounded-md bg-red-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-600 transition">Wissen</button>
+                </div>
+            </form>
+            <section id="faq">
+                <h2 class="mb-5 mt-5 text-2xl font-bold tracking-tight text-gray-800">Veelgestelde vragen</h2>
+                <div
+                    class="mb-2 p-5 group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-purple-50 shadow-sm transition hover:shadow-md">
+                    <div class="faq-item">
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Wat zijn de openingsuren?</h3>
+                        <p>Wij zijn geopend van maandag tot vrijdag van 9:00 tot 17:00 uur. In het weekend zijn we
+                            gesloten.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Hoe kan ik contact met jullie opnemen?</h3>
+                        <p>U kunt ons bereiken via telefoon op +32(0)33773235, via email op info@groentenboers.be, of
+                            via het
+                            contactformulier op onze website.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Wat is de levertijd voor bestellingen?</h3>
+                        <p>Standaard bestellingen worden binnen 3 tot 5 werkdagen geleverd. Voor spoedbestellingen
+                            bieden we een
+                            express optie aan met levering binnen 24 uur.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Kan ik mijn bestelling annuleren?</h3>
+                        <p>Ja, u kunt uw bestelling kosteloos annuleren tot 24 uur na plaatsing. Neem hiervoor contact
+                            op met
+                            onze klantenservice.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Welke betaalmethoden accepteren jullie?</h3>
+                        <p>We accepteren creditcards (Visa, Mastercard), Bancontact, PayPal en bankoverschrijving. Alle
+                            betalingen worden veilig verwerkt.</p>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <footer class="bg-gray-50 border-t border-gray-200" aria-labelledby="footer-heading">
@@ -255,5 +273,4 @@
         </div>
     </footer>
 </body>
-
 </html>
