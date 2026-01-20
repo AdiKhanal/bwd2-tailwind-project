@@ -10,37 +10,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=grocery">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body class="font-sans text-gray-800">
     <header class="border-b border-gray-200">
-
-        <!-- Bovenste info balk -->
         <div class="bg-gray-300 text-sm">
             <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-1 md:flex-row md:justify-evenly">
-                <p><a class="hover:text-yellow-300 hover:font-bold" href="https://www.trustpilot.com/">Klantwaardering 9,6</a></p>
-                <p>
-                    Bel ons:
-                    <a href="tel:+3233773235" class="text-green-800 hover:underline hover:text-green-900 hover:font-bold">
-                        +32(0)33773235
-                    </a>
-                </p>
-                <p>Snelle levering in heel Vlaanderen en Brussel</p>
+                <p><a class="hover:text-yellow-300 hover:font-bold" href="https://www.trustpilot.com/">Customer rating 9.6</a></p>
+                <p>Call us:<a href="tel:+3233773235" class="text-green-800 hover:underline hover:text-green-900 hover:font-bold">+32(0)33773235</a></p>
+                <p>Fast delivery throughout Flanders and Brussels</p>
                 <div>
-                    <p><a class="hover:text-green-900 hover:font-bold" href="Home.html">NL</a> <a class="hover:text-green-900 hover:font-bold"
-                            href="../ENG/HomeENG.html">ENG</a> <a class="hover:text-green-900 hover:font-bold" href="../FRA/HomeFRA.html">FR</a></p>
+                    <p>
+                        <a class="hover:text-green-900 hover:font-bold" href="../Code/Home.html">NL</a>
+                        <a class="hover:text-green-900 hover:font-bold" href="HomeENG.html">ENG</a>
+                        <a class="hover:text-green-900 hover:font-bold" href="../FRA/HomeFRA.html">FR</a>
+                    </p>
                 </div>
             </div>
         </div>
-
-        <!-- Navigatie -->
         <nav
             class="relative bg-green-600 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div class="relative flex h-16 items-center justify-between">
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
-                        <!-- Mobile menu button-->
                         <button type="button" command="--toggle" commandfor="mobile-menu"
                             class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
                             <span class="absolute -inset-0.5"></span>
@@ -49,25 +43,23 @@
                     </div>
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="flex shrink-0 items-center">
-                            <a href="#"><span
+                            <a href="HomeENG.html"><span
                                     class="material-symbols-outlined text-4xl text-gray-300 hover:text-white">grocery</span></a>
                         </div>
                         <div class="hidden sm:ml-6 sm:block">
                             <div class="flex space-x-4">
-                                <a href="Home.html" aria-current="page"
+                                <a href="HomeENG.html" aria-current="page"
                                     class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Home</a>
-                                <a href="Producten.html"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Producten</a>
-                                <a href="Wie zijn we.html"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Wie
-                                    zijn we</a>
-                                <a href="Join us.html"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Join
-                                    us</a>
-                                <a href="Contact.html"
+                                <a href="ProductenENG.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Products</a>
+                                <a href="Wie zijn weENG.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Who we are</a>
+                                <a href="Join usENG.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Careers</a>
+                                <a href="ContactENG.html"
                                     class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Contact</a>
-                                <a href="Winkelkar.html"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Winkelkar</a>
+                                <a href="WinkelkarENG.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Shopping Cart</a>
                             </div>
                         </div>
                     </div>
@@ -83,25 +75,24 @@
             </div>
         </nav>
     </header>
-    <main class="mx-auto max-w-7xl px-4 py-12">
-        <h1 class="mt-5 text-center text-4xl font-bold text-gray-900 sm:text-5xl">Contacteer De Groentenboers</h1>
-        <p class=" mt-5 text-center text-xl tracking-tight text-gray-800">Vragen of opmerkingen? Contacteer ons en we
-            helpen je zo snel mogelijk!</p>
+<main class="mx-auto max-w-7xl px-4 py-12">
+        <h1 class="mt-5 text-center text-4xl font-bold text-gray-900 sm:text-5xl">Contact De Groentenboers</h1>
+        <p class=" mt-5 text-center text-xl tracking-tight text-gray-800">Questions or comments? Contact us and we
+            will help you as soon as possible!</p>
         <figure class="h-full w-full mt-5 flex justify-center">
-            <img src="IMG/contact.jpg" alt="Contact">
+            <img src="../Code/IMG/contact.jpg" alt="Contact">
         </figure>
 
-        <!--Contactformulier-->
         <section class="mt-10">
             <form action="mailto:info@groentenboers.be" method="post" enctype="text/plain">
                 <div class=" grid grid-cols-1 mt-5">
-                    <label for="naam" class="font-bold text-xl">Naam: *</label><br>
+                    <label for="naam" class="font-bold text-xl">Last Name: *</label><br>
                     <div class="flex items-center rounded-md outline bg-red-100">
                         <input type="text" id="naam" required>
                     </div>
                 </div>
                 <div class=" grid grid-cols-1 mt-5">
-                    <label for="voornaam" class="font-bold text-xl">Voornaam: *</label><br>
+                    <label for="voornaam" class="font-bold text-xl">First Name: *</label><br>
                     <div class="flex items-center rounded-md outline bg-red-100">
                         <input type="text" id="voornaam" required>
                     </div>
@@ -113,69 +104,65 @@
                     </div>
                 </div>
                 <div class=" grid grid-cols-1 mt-5">
-                    <label for="telefoon" class="font-bold text-xl">Telefoon:</label><br>
+                    <label for="telefoon" class="font-bold text-xl">Phone:</label><br>
                     <div class="flex items-center rounded-md outline bg-red-100">
                         <input type="tel" id="telefoon">
                     </div>
                 </div>
                 <div class=" grid grid-cols-1 mt-5">
-                    <label for="onderwerp" class="font-bold text-xl">Onderwerp:</label><br>
+                    <label for="onderwerp" class="font-bold text-xl">Subject:</label><br>
                     <div class="flex items-center rounded-md outline bg-red-100">
                         <select id="onderwerp">
-                            <option value="offerte">Offerte</option>
-                            <option value="bestelling">Bestelling</option>
-                            <option value="klacht">Klacht</option>
-                            <option value="andere">Andere</option>
+                            <option value="offerte">Quote</option>
+                            <option value="bestelling">Order</option>
+                            <option value="klacht">Complaint</option>
+                            <option value="andere">Other</option>
                         </select>
                     </div>
                 </div>
                 <div class=" grid grid-cols-1 mt-5">
-                    <label for="bericht" class="font-bold text-xl">Bericht:</label><br>
+                    <label for="bericht" class="font-bold text-xl">Message:</label><br>
                     <div class="flex items-center rounded-md outline bg-red-100">
                         <textarea id="bericht" cols="40" rows="5"></textarea>
                     </div>
                 </div>
                 <div class=" grid grid-cols-1 mt-5">
-                    <label><input type="checkbox"> Inschrijven voor onze nieuwsbrief</label>
+                    <label><input type="checkbox"> Subscribe to our newsletter</label>
                 </div>
                 <div class=" grid grid-cols-1">
                     <button type="submit"
-                        class="mt-5 mb-5 flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-500 transition">Verzenden</button>
+                        class="mt-5 mb-5 flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-500 transition">Send</button>
                     <button type="reset"
-                        class="mt-5 mb-5 flex w-full items-center justify-center rounded-md bg-red-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-600 transition">Wissen</button>
+                        class="mt-5 mb-5 flex w-full items-center justify-center rounded-md bg-red-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-600 transition">Clear</button>
                 </div>
             </form>
             <section id="faq">
-                <h2 class="mb-5 mt-5 text-2xl font-bold tracking-tight text-gray-800">Veelgestelde vragen</h2>
+                <h2 class="mb-5 mt-5 text-2xl font-bold tracking-tight text-gray-800">Frequently Asked Questions</h2>
                 <div
                     class="mb-2 p-5 group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-purple-50 shadow-sm transition hover:shadow-md">
                     <div class="faq-item">
-                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Wat zijn de openingsuren?</h3>
-                        <p>Wij zijn geopend van maandag tot vrijdag van 9:00 tot 17:00 uur. In het weekend zijn we
-                            gesloten.</p>
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">What are the opening hours?</h3>
+                        <p>We are open Monday to Friday from 9:00 AM to 5:00 PM. We are closed on weekends.</p>
                     </div>
                     <div class="faq-item">
-                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Hoe kan ik contact met jullie opnemen?</h3>
-                        <p>U kunt ons bereiken via telefoon op +32(0)33773235, via email op info@groentenboers.be, of
-                            via het
-                            contactformulier op onze website.</p>
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">How can I contact you?</h3>
+                        <p>You can reach us by phone at +32(0)33773235, by email at info@groentenboers.be, or
+                            via the contact form on our website.</p>
                     </div>
                     <div class="faq-item">
-                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Wat is de levertijd voor bestellingen?</h3>
-                        <p>Standaard bestellingen worden binnen 3 tot 5 werkdagen geleverd. Voor spoedbestellingen
-                            bieden we een
-                            express optie aan met levering binnen 24 uur.</p>
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">What is the delivery time for orders?</h3>
+                        <p>Standard orders are delivered within 3 to 5 business days. For urgent orders,
+                            we offer an express option with delivery within 24 hours.</p>
                     </div>
                     <div class="faq-item">
-                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Kan ik mijn bestelling annuleren?</h3>
-                        <p>Ja, u kunt uw bestelling kosteloos annuleren tot 24 uur na plaatsing. Neem hiervoor contact
-                            op met
-                            onze klantenservice.</p>
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Can I cancel my order?</h3>
+                        <p>Yes, you can cancel your order free of charge up to 24 hours after placement. Please contact
+                            our customer service for this.</p>
                     </div>
                     <div class="faq-item">
-                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Welke betaalmethoden accepteren jullie?</h3>
-                        <p>We accepteren creditcards (Visa, Mastercard), Bancontact, PayPal en bankoverschrijving. Alle
-                            betalingen worden veilig verwerkt.</p>
+                        <h3 class="text-xl mt-2 mb-2 text-blue-800">Which payment methods do you accept?</h3>
+                        <p>We accept credit cards (Visa, Mastercard), Bancontact, PayPal, and bank transfer. All
+                            payments are processed securely.</p>
                     </div>
                 </div>
             </section>
@@ -186,58 +173,57 @@
         <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">
                 <div class="space-y-8">
-                    <a href="Home.html" class="flex items-center gap-2">
+                    <a href="HomeENG.html" class="flex items-center gap-2">
                         <span class="material-symbols-outlined text-3xl text-black">grocery</span>
                         <span class="font-bold text-xl text-gray-900">De Groentenboers</span>
                     </a>
                     <p class="text-sm leading-6 text-gray-600">
-                        Verse groenten en fruit, rechtstreeks bij u thuis geleverd in heel Vlaanderen.
+                        Fresh vegetables and fruit, delivered directly to your home throughout Flanders.
                     </p>
                     <div class="flex space-x-6">
                         <a href="https://www.facebook.com" aria-label="Facebook"
                             class="text-gray-400 hover:text-gray-500"><span
                                 class="fa-brands fa-square-facebook hover:text-gray-500"></span></a>
-                        <a href="https://www.twitter.com" aria-label="Twitter" class="text-gray-400"><span
+                        <a href="https://www.twitter.com" aria-label="Twitter"
+                            class="text-gray-400"><span
                                 class="fa-brands fa-square-x-twitter hover:text-gray-500"></span></a>
-                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="text-gray-400"><span
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn"
+                            class="text-gray-400"><span
                                 class="fa-brands fa-linkedin hover:text-gray-500"></span></a>
-                        <a href="https://www.instagram.com" aria-label="Instagram" class="text-gray-400"><span
+                        <a href="https://www.instagram.com" aria-label="Instagram"
+                            class="text-gray-400"><span
                                 class="fa-brands fa-square-instagram hover:text-gray-500"></span></a>
-                        <a href="https://www.youtube.com" aria-label="Youtube" class="text-gray-400"><span
+                        <a href="https://www.youtube.com" aria-label="YouTube"
+                            class="text-gray-400"><span
                                 class="fa-brands fa-square-youtube hover:text-gray-500"></span></a>
                     </div>
                 </div>
                 <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
-                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Ons
-                                aanbod</h3>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Our range</h3>
                             <ul class="mt-6 space-y-4">
-                                <li><a href="Producten.html#Groenten"
-                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Groenten</a></li>
-                                <li><a href="Producten.html#Fruit"
+                                <li><a href="ProductenENG.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Vegetables</a></li>
+                                <li><a href="ProductenENG.html"
                                         class="text-sm leading-6 text-gray-600 hover:text-green-800">Fruit</a></li>
-                                <li><a href="Producten.html#Fruitmanden"
-                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Fruitmanden</a>
-                                </li>
+                                <li><a href="ProductenENG.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Fruit baskets</a></li>
                             </ul>
                         </div>
                         <div class="mt-10 md:mt-0">
-                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Service
-                                en contact</h3>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Service and contact</h3>
                             <ul class="mt-6 space-y-4">
-                                <li><a href="Wie zijn we.html"
-                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Over ons</a></li>
-                                <li><a href="Contact.html"
-                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Klantenservice</a>
-                                </li>
-                                <li><a href="Contact.html"
+                                <li><a href="Wie zijn weENG.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">About us</a></li>
+                                <li><a href="ContactENG.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Customer service</a></li>
+                                <li><a href="ContactENG.html"
                                         class="text-sm leading-6 text-gray-600 hover:text-green-800">Contact</a></li>
-                                <li><a href="Join us.html"
-                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Werken bij</a></li>
-                                <li><a href="Contact.html#faq"
-                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Veelgestelde
-                                        vragen</a></li>
+                                <li><a href="Join usENG.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Careers</a></li>
+                                <li><a href="ContactENG.html"
+                                        class="text-sm leading-6 text-gray-600 hover:text-green-800">Frequently Asked Questions</a></li>
                             </ul>
                         </div>
                     </div>
@@ -246,28 +232,31 @@
             <div
                 class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
                 <div>
-                    <h3 class="text-sm font-semibold leading-6 text-gray-900">Schrijf je in voor onze nieuwsbrief</h3>
-                    <p class="mt-2 text-sm leading-6 text-gray-600">Blijf op de hoogte van onze wekelijkse acties en
-                        vers fruit.</p>
+                    <h3 class="text-sm font-semibold leading-6 text-gray-900">Subscribe to our newsletter</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-600">Stay informed about our weekly offers and fresh fruit.</p>
                 </div>
                 <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
-                    <label for="email-address" class="sr-only">E-mailadres</label>
+                    <label for="email-address" class="sr-only">Email address</label>
                     <input type="email" name="email-address" id="email-address" autocomplete="email" required
                         class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-800 sm:w-64 sm:text-sm sm:leading-6 lg:w-full"
-                        placeholder="jouw@email.be">
+                        placeholder="your@email.com">
                     <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                         <button type="submit"
-                            class="flex w-full items-center justify-center rounded-md bg-green-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800">Aanmelden</button>
+                            class="flex w-full items-center justify-center rounded-md bg-green-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800">
+                            Sign up
+                        </button>
                     </div>
                 </form>
             </div>
             <div class="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
                 <div class="flex space-x-6 md:order-2">
-                    <a href="Algemene Voorwaarden.html" class="text-xs leading-5 text-gray-500 hover:text-gray-900">Algemene voorwaarden</a>
-                    <a href="Privacy.html" class="text-xs leading-5 text-gray-500 hover:text-gray-900">Privacy</a>
+                    <a href="Algemene Voorwaarden ENG.html"
+                        class="text-xs leading-5 text-gray-500 hover:text-gray-900">Terms and conditions</a>
+                    <a href="PrivacyENG.html"
+                        class="text-xs leading-5 text-gray-500 hover:text-gray-900">Privacy</a>
                 </div>
                 <p class="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
-                    &copy; 2025 De Groentenboers. Alle rechten voorbehouden.
+                    &copy; 2025 De Groentenboers. All rights reserved.
                 </p>
             </div>
         </div>

@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="FRA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Groentenboers - Verse Groenten en Fruit Online</title>
+    <meta name="description"
+        content="Bestel verse groenten en fruit online bij De Groentenboers. Snelle levering, hoge kwaliteit en een ruim assortiment.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=grocery">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="font-sans text-gray-800">
+    <header class="border-b border-gray-200">
+
+        <!-- Bovenste info balk -->
+        <div class="bg-gray-300 text-sm">
+            <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-1 md:flex-row md:justify-evenly">
+                <p><a class="hover:text-yellow-300 hover:font-bold" href="https://www.trustpilot.com/">Évaluation des
+                        clients 9.6</a></p>
+                <p>Appelez nous:<a href="tel:+3233773235"
+                        class="text-green-800 hover:underline hover:text-green-900 hover:font-bold">+32(0)33773235</a>
+                </p>
+                <p>Livraison rapide dans toute la Flandre et Bruxelles</p>
+                <div>
+                    <p><a class="hover:text-green-900 hover:font-bold" href="../Code/Home.html">NL</a> <a
+                            class="hover:text-green-900 hover:font-bold" href="../ENG/HomeENG.html">ENG</a><a
+                            class="hover:text-green-900 hover:font-bold" href="../FRA/HomeFRA.html"> FR</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigatie -->
+        <nav
+            class="relative bg-green-600 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <button type="button" command="--toggle" commandfor="mobile-menu"
+                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+                        </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex shrink-0 items-center">
+                            <a href="HomeFRA.html"><span
+                                    class="material-symbols-outlined text-4xl text-gray-300 hover:text-white">grocery</span></a>
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex spac e-x-4">
+                                <a href="HomeFRA.html" aria-current="page"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Accueil</a>
+                                <a href="ProductenFRA.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Produits</a>
+                                <a href="Wie zijn weFRA.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Qui
+                                    sommes-nous</a>
+                                <a href="Join usFRA.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Rejoignez-nous</a>
+                                <a href="ContactFRA.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+                                <a href="WinkelkarFRA.html"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Panier
+                                    d'achat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <button type="button"
+                            class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                            <span class="absolute -inset-1.5"></span>
+                            <span class="sr-only">View notifications</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main class="mx-auto max-w-7xl px-4 py-12">
+        <section class="mt-20 mb-10">
+        <h1 class="text-center text-4xl font-bold text-gray-900 sm:text-5xl">Nos délicieux produits frais</h1>
+        </section>
+        <p class="text-xl tracking-tight text-gray-800">Bienvenue dans notre sélection de produits frais ! Chaque matin, nous choisissons avec grand soin les meilleurs légumes de saison pour vous, afin que vous ayez toujours une base saine pour votre dîner. Mais n'oubliez pas votre dose quotidienne de vitamines : nos fruits sont délicieusement juteux, mûris au soleil et naturellement sucrés. Que vous recherchiez les ingrédients parfaits pour un repas frais ou simplement un en-cas sain, vous trouverez toujours chez nous le meilleur de la terre. Prenez le temps de regarder autour de vous et découvrez notre passion pour le frais !</p>
+        <section id="Legumes">
+            <section class="mt-20 mb-10">
+            <h2 class="text-center text-3xl font-bold tracking-tight text-gray-800">Légumes</h2>
+            </section>
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/aardappel.jpg" alt="Pommes de terre fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">Belgique
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Pommes de terre<span class="text-sm font-normal text-gray-500"> (chair ferme)</span></p>
+                        <p class="text-base font-semibold text-gray-900">€ 0,89 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="aardappel-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="aardappel-amount" value="1" min="1" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/asperge.jpg" alt="Asperges fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">Belgique
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Asperges</p>
+                        <p class="text-base font-semibold text-gray-900">€ 4,95 <span class="text-sm font-normal text-gray-500">/ 500g</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="asperge-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="asperge-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">500g</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/bloemkolen.jpg" alt="Choux-fleurs frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">Belgique
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Choux-fleurs</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,49 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="bloemkolen-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="bloemkolen-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button"
+                                class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/broccoli.jpg" alt="Brocoli frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">Belgique
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Brocoli<span class="text-sm font-normal text-gray-500"> (plein de vitamines)</span></p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,29 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="broccoli-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="broccoli-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/champignons.jpg" alt="Champignons frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">PAYS-BAS
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Champignons<span class="text-sm font-normal text-gray-500"> (frais du jour)</span></p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,79 <span class="text-sm font-normal text-gray-500">/ 500g</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="champignons-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="champignons-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">500g</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/chinese kool.jpg" alt="Chou chinois frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">PAYS-BAS
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Chou Chinois<span class="text-sm font-normal text-gray-500"> (croquant et doux)</span></p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,99 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="chinese-kool-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="chinese-kool-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/courgette.jpg" alt="Courgette fraîche" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Courgette</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,12 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="courgette-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="courgette-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/komkommer.jpg" alt="Concombre frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">PAYS-BAS
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Concombre</p>
+                        <p class="text-base font-semibold text-gray-900">€ 0,79 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="komkommer-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="komkommer-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/kropsla.jpg" alt="Laitue fraîche" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">PAYS-BAS
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Laitue</p>
+                        <p class="text-base font-semibold text-gray-900">€ 0,89 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="kropsla-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="kropsla-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/paprika.jpg" alt="Poivrons frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">PAYS-BAS
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Poivron<span class="text-sm font-normal text-gray-500"> (rouge, jaune ou vert)</span></p>
+                        <p class="text-base font-semibold text-gray-900">€ 0,99 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="paprika-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="paprika-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/pompoen.jpg" alt="Citrouille fraîche" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">PAYS-BAS
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Citrouille</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,29 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="pompoen-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="pompoen-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/prei.jpg" alt="Poireaux frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Poireau</p>
+                        <p class="text-base font-semibold text-gray-900">€ 0,99 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="prei-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="prei-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/raap.jpg" alt="Navets frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Navet</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,19 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="raap-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="raap-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/romeinse sla.jpg" alt="Laitue romaine fraîche" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Laitue romaine</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,59 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="romeinse-sla-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="romeinse-sla-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/selder.jpg" alt="Céleri frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Céleri</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,44 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="selder-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="selder-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button"
+                                class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/tomaten.jpg" alt="Verse tomaten" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Tomaten</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,19 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="tomaten-amount" class="sr-only">Hoeveelheid</label>
+                                <input type="number" id="tomaten-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Toevoegen</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/uien.jpg" alt="Oignons frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Oignons</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,89 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="uien-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="uien-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/witloof.jpg" alt="Chicons frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Chicons</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,52 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="witloof-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="witloof-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/wortels.jpg" alt="Carottes fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Carottes</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,09 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="wortels-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="wortels-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/zoeteaardappel.jpg" alt="Patates douces fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Patate douce</p>
+                        <p class="text-base font-semibold text-gray-900">€ 3,89 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="zoeteaardappel-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="zoeteaardappel-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/groenten/zuurkool.jpg" alt="Choucroute fraîche" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Choucroute</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,32 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="zuurkool-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="zuurkool-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+                <section id="Fruit" class="mt-20 mb-10">
+                    <h2 class="text-center text-3xl font-bold tracking-tight text-gray-800">Fruits</h2>
+                </section>
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/aardbei.jpg" alt="Fraises fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Fraises</p>
+                        <p class="text-base font-semibold text-gray-900">€ 6,32 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="aardbei-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="aardbei-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/ananas.jpg" alt="Ananas frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">COSTA RICA
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Ananas</p>
+                        <p class="text-base font-semibold text-gray-900">€ 5,32 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="ananas-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="ananas-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/appel.jpg" alt="Pommes fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Pommes</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,38 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="appel-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="appel-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/bananen.jpg" alt="Bananes fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">COLOMBIE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Bananes</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,92 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="bananen-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="bananen-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/citroen.jpg" alt="Citrons frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">ESPAGNE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Citrons</p>
+                        <p class="text-base font-semibold text-gray-900">€ 3,32 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="citroen-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="citroen-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/druiven blauw.jpg" alt="Raisins noirs frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">ITALIE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Raisins Noirs</p>
+                        <p class="text-base font-semibold text-gray-900">€ 6,32 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="druiven-blauw-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="druiven-blauw-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/druiven wit.jpg" alt="Raisins blancs frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">ITALIE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Raisins Blancs</p>
+                        <p class="text-base font-semibold text-gray-900">€ 5,82 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="druiven-wit-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="druiven-wit-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/frambozen.jpg" alt="Framboises fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Framboises</p>
+                        <p class="text-base font-semibold text-gray-900">€ 8,32 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="frambozen-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="frambozen-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/kersen.jpg" alt="Cerises fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">TURQUIE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Cerises</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,32 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="kersen-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="kersen-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/kiwi.jpg" alt="Kiwis frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">NOUVELLE-ZÉLANDE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Kiwi</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,50 <span class="text-sm font-normal text-gray-500">/ pièce</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="kiwi-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="kiwi-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">pièce</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/mango 2.jpg" alt="Mangues fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BRÉSIL
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Mangue</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,82 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="mango-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="mango-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/meloenen.jpg" alt="Melons frais" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">ESPAGNE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Melons</p>
+                        <p class="text-base font-semibold text-gray-900">€ 3,82 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="meloenen-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="meloenen-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/peren.jpg" alt="Poires fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Poires</p>
+                        <p class="text-base font-semibold text-gray-900">€ 2,89 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="peren-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="peren-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/perzik.jpg" alt="Pêches fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">FRANCE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Pêches</p>
+                        <p class="text-base font-semibold text-gray-900">€ 1,72 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="perzik-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="perzik-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/pruimen.jpg" alt="Prunes fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">ALLEMAGNE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Prunes</p>
+                        <p class="text-base font-semibold text-gray-900">€ 4,32 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="pruimen-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="pruimen-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/sinaasappel.jpg" alt="Oranges fraîches" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">BELGIQUE
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Oranges</p>
+                        <p class="text-base font-semibold text-gray-900">€ 3,30 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="sinaasappel-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="sinaasappel-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMg/fruit/fruitmand groot.jpg" alt="Grande corbeille de fruits" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                        <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">ASSORTIMENT
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Grande corbeille de fruits</p>
+                        <p class="text-base font-semibold text-gray-900">€ 12,99 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="fruitmand-groot-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="fruitmand-groot-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                 <article class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+                    <figure class="aspect-square overflow-hidden bg-gray-200 group-hover:opacity-75">
+                        <img src="../Code/IMG/fruit/fruitmand klein.jpg" alt="Petite corbeille de fruits" class="h-full w-full object-cover object-center">
+                    </figure>
+                    <div class="flex flex-1 flex-col space-y-2 p-4">
+                    <h3 class="text-sm font-medium text-gray-900 uppercase tracking-widest text-green-800">ASSORTIMENT
+                        </h3>
+                        <p class="text-lg font-bold text-gray-900">Petite corbeille de fruits</p>
+                        <p class="text-base font-semibold text-gray-900">€ 6,99 <span class="text-sm font-normal text-gray-500">/ kg</span></p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <label for="fruitmand-klein-amount" class="sr-only">Quantité</label>
+                                <input type="number" id="fruitmand-klein-amount" value="0.5" min="0.5" step="0.5" class="w-16 rounded-md border-gray-300 py-1 text-center text-sm focus:border-green-800 focus:ring-green-800">
+                                <span class="text-sm text-gray-600">kg</span>
+                            </div>
+                            <button type="button" class="flex w-full items-center justify-center rounded-md bg-green-800 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition">Ajouter</button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+        </section>
+    </main>
+    <footer class="bg-gray-50 border-t border-gray-200" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                    <a href="HomeFRA.html" class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl text-black">grocery</span>
+                        <span class="font-bold text-xl text-gray-900">De Groentenboers</span>
+                    </a>
+                    <p class="text-sm leading-6 text-gray-600">Fruits et légumes frais, livrés directement chez vous dans toute la Flandre.</p>
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com" aria-label="Facebook" class="text-gray-400 hover:text-gray-500"><span class="fa-brands fa-square-facebook hover:text-gray-500"></span></a>
+                        <a href="https://www.twitter.com" aria-label="Twitter" class="text-gray-400"><span class="fa-brands fa-square-x-twitter hover:text-gray-500"></span></a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="text-gray-400"><span class="fa-brands fa-linkedin hover:text-gray-500"></span></a>
+                        <a href="https://www.instagram.com" aria-label="Instagram" class="text-gray-400"><span class="fa-brands fa-square-instagram hover:text-gray-500"></span></a>
+                        <a href="https://www.youtube.com" aria-label="Youtube" class="text-gray-400"><span class="fa-brands fa-square-youtube hover:text-gray-500"></span></a>
+                    </div>
+                </div>
+                <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Nous fournir</h3>
+                            <ul class="mt-6 space-y-4">
+                                <li><a href="ProductenFRA.html" class="text-sm leading-6 text-gray-600 hover:text-green-800">Légumes</a></li>
+                                <li><a href="ProductenFRA.html" class="text-sm leading-6 text-gray-600 hover:text-green-800">Fruit</a></li>
+                                <li><a href="ProductenFRA.html" class="text-sm leading-6 text-gray-600 hover:text-green-800">Paniers à fruits</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900 uppercase tracking-wider">Service en contact</h3>
+                            <ul class="mt-6 space-y-4">
+                                <li><a href="Wie zijn weFRA.html" class="text-sm leading-6 text-gray-600 hover:text-green-800">Au-dessus de</a></li>
+                                <li><a href="ContactFRA.html" class="text-sm leading-6 text-gray-600 hover:text-green-800">Service client</a></li>
+                                <li><a href="ContactFRA.html" class="text-sm leading-6 text-gray-600 hover:text-green-800">Contact</a></li>
+                                <li><a href="Join usFRA.html" class="text-sm leading-6 text-gray-600 hover:text-green-800">Travailler à</a></li>
+                                <li><a href="ContactFRA.html" class="text-sm leading-6 text-gray-600 hover:text-green-800">Fréquemment demandéquestions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
+                <div>
+                    <h3 class="text-sm font-semibold leading-6 text-gray-900">Abonnez-vous à notre newsletter</h3>
+                    <p class="mt-2 text-sm leading-6 text-gray-600">Restez informé de nos promotions hebdomadaires et fruits frais.</p>
+                </div>
+                <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
+                    <label for="email-address" class="sr-only">E-mailadres</label>
+                    <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-800 sm:w-64 sm:text-sm sm:leading-6 lg:w-full" placeholder="jouw@email.be">
+                    <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
+                        <button type="submit" class="flex w-full items-center justify-center rounded-md bg-green-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800">Connexion</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="Algemene Voorwaarden FRA.html" class="text-xs leading-5 text-gray-500 hover:text-gray-900">Termes et conditions générales</a>
+                    <a href="PrivacyFRA.html" class="text-xs leading-5 text-gray-500 hover:text-gray-900">Confidentialité</a>
+                </div>
+                <p class="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">&copy; 2025 De Groentenboers. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
